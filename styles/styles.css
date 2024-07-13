@@ -46,30 +46,32 @@ nav li{
 }
 /* main section started*/
 .banner{
-   text-align: center;
-    background-image:url(/images/Group\ 14.png);
     display: flex;
+    text-align: center;
+    background-image:url(/images/Group\ 14.png);
     justify-content: space-between;
    
 }
 .goat{
-    font-size: xx-large;
+    font-size:70px;
     font-weight:900;
-    color: #8758F1;
-        text  
+    background: linear-gradient(90deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
 .banner-img{
-    width: 719.45px;
+    width:45%;
     height: 681.02px;
    
     margin-right: 60px;
 }
 .banner-content{
+    margin-top: 100px;
     width:362px;
     height:200px;
-    padding-left: 150px;
+    margin-left: 150px;
     text-align:left;
-    padding-top: 150px;   
+      
 }
 .banner-btn{
     display: flex;
@@ -91,11 +93,72 @@ nav li{
     padding:10px;
     border:0px;
 }
+.banner2{
+    display: flex;
+    width:100%;
+    height: 500px;
+    background-color: rgba(250, 240, 230, 0.564);
+}
+.banner2-img{
+    width:868px;
+    height: 489px;
+    margin-left:80px;
+}
+.banner2-title{
+    background: linear-gradient(90deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner2-content{
+    margin: 80px;
+    text-align: right;
+}
+.btn-knowmore{
+    background-color: #F948B2;
+    color:#FFFFFF ;
+    border-radius: 30px;
+    padding:10px;
+    border-color: none;
+    border:0px;
+}
+.online-content{
+    text-align: center;
+    margin-top: 20px;
+}
+.games-card{
+    display: flex;
+    margin-left: 40px;
+    margin-right: 200px;
+    gap: 20px;
 
+}
+.game-img{
+    width:342px;
+    height:400px;
+}
+.game-img3{
+    position: relative;
+}
+
+.img3-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:transparent;
+    color: #F948B2;
+    border: 0;
+    border-radius: 20px;
+
+}
+.img3-btn:hover{
+    background-color: #cac0bc;
+}
 /* responsive */
 @media screen and (max-width:576px) {
     nav{
         flex-direction: column;
+        margin-left: 100px;
     }
     nav >ul{
         flex-direction: column;
@@ -105,20 +168,35 @@ nav li{
         background-image:none;
     }
     .banner-img{
-        width: 611px;
-        height:446px;
+        width:100%;
+        height: 400px;
+        margin-left: 40px;
     }
     .banner-content{
         margin-top: 20px;
-        margin-left: 40px;
-        margin-top: 10px;
+        margin-left:0px;
         padding-top: 0px;
+        padding-left: 100px;
         background-image: url(/images/Group\ 14.png);
         width:360px;
-        height: 300px;
+        height: 400px;
+        align-items: center;
         
     }
     .follow-us{
         width:150px;
+    }
+    .banner2{ 
+        flex-direction: column;
+        background-color:#FFFFFF;
+    }
+    .banner2-img{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .banner2-content{
+        text-align: center;
+        margin-top: 5px;
+        padding-left:20px;
     }
 }
