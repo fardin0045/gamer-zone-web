@@ -8,7 +8,9 @@
     font-family: 'Work Sans', sans-serif;
 }
 .liner-color{
-    color: #F948B2;
+    background: linear-gradient(90deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav{
@@ -154,6 +156,127 @@ nav li{
 .img3-btn:hover{
     background-color: #cac0bc;
 }
+.banner3{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.banner3 img{
+    width: 580px;
+    height: 550px;
+}
+.banner3-content{
+    width: 353px;
+    height: 294px;
+    text-align: end;
+    margin-top: 250px;
+    padding-left: 40px;
+}
+.banner3-img2 img{
+    width:318.5px;
+    height:365.08px;
+    position: relative;
+    right: 160px;
+    bottom:250px;
+}
+.banner4{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.banner4 img{
+    width: 580px;
+    height: 550px;
+}
+.banner4-content{
+    width: 353px;
+    height: 294px;
+    text-align:start;
+    margin-top: 250px;
+}
+.banner4-img2 img{
+    width:318.5px;
+    height:365.08px;
+    position: relative;
+    left: 380px;
+    bottom:250px;
+}
+.careers{
+    width:100%;
+    height:600px;
+
+}
+.careers-container{
+    display: flex;
+    background-color:#F948B2; 
+    color: #FFFFFF;
+}
+.careers-content{
+    width:40%;
+    height:400px;
+    padding-left: 200px;
+    padding-top: 150px;
+   text-align: start;
+}
+.jobs-country{
+ 
+    display: flex;
+    justify-content: space-between;
+}
+.careers-img{
+    width: 50%;
+}
+.country{
+    text-align: end;
+}
+.games{
+    display: flex;
+    border-radius: 40px;
+    background-color:#f9f9f9;
+    align-items: center;
+}
+.games:hover{
+    border: 1px solid tomato;
+}
+.games p{
+ font-weight: 500;
+ 
+}
+.games-container{
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+footer{
+    background-color:#0B0223;
+    color: #FFFFFF;
+}
+/*footer*/
+.footer-title{
+    
+    padding-left: 640px;
+    padding-top: 40px;
+}
+.features{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+.logo{
+    text-align: center;   
+}
+
+.more-info{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.copyrights{
+    text-align: center;
+}
+
 /* responsive */
 @media screen and (max-width:576px) {
     nav{
@@ -199,4 +322,86 @@ nav li{
         margin-top: 5px;
         padding-left:20px;
     }
+    .games-card{
+        flex-direction: column;
+    
+    }
+    .online-content{
+        text-align: center;
+        margin-top: 200px;
+    }
+    .banner3{
+        flex-direction: column;
+        margin:0;
+    }
+    .banner3-content{
+        text-align: center;
+        margin-top:80px;
+    }
+    .banner3 img{
+        margin-left:20px ;
+        width: 100%;
+       
+    }
+    .banner4{
+        flex-direction: column-reverse;
+    }
+    .banner4-content{
+        margin-top:0px;
+        text-align: center;
+    }
+    .banner4 img{
+        width:100%;
+    }
+    .banner4-img2 img{
+        width:50%;
+        position: relative;
+        left:260px;
+        margin-left: 20px;
+    }
+    .careers-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 28px;
+
+    }
+    .careers-content{
+        
+        width:80%;
+        height:400px;
+        padding-left: 0px;
+        padding-top: 10px;
+        
+     }
+     .careers-container img{
+        width: 300px;
+        height: 300px;
+     }
+     .games-container{
+        margin-top: 200px;
+        margin-left:5px;
+
+        grid-template-columns: repeat(3, 1fr);
+     }
+     footer{
+        margin-left: 30px;
+        width: 100%;
+     }
+     .footer-title{
+        padding-left:100px;
+
+     }
+     .features{
+        grid-template-columns: repeat(3, 1fr);
+        padding-left:15px;
+     }
+     .logo{
+        padding-left:150px;
+     }
+     .more-info{
+        padding-left:15px;
+        grid-template-columns:repeat(2, 1fr);
+     }
+
 }
